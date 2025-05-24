@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<participants xmlns:ns2="http://example.com/reservation" xmlns:ns3="http://example.com/participant" xmlns:ns4="http://example.com/user" xmlns:ns5="http://example.com/personnel" xmlns:ns7="http://example.com/match">
+    <participant>
+        <ns4:id>10000</ns4:id>
+        <ns4:prenom>tchedo to7sel</ns4:prenom>
+        <ns4:nom>mo7sen</ns4:nom>
+        <ns4:email>suiiiiii@gmds.com</ns4:email>
+        <ns4:login>lksdjfls</ns4:login>
+        <ns4:motDePasse>lskdjfl</ns4:motDePasse>
+        <ns4:role>participant</ns4:role>
+        <ns3:adresse>sdjfnslk</ns3:adresse>
+        <ns3:numTel>45545</ns3:numTel>
+        <ns3:preferences>Preference 1</ns3:preferences>
+        <ns3:preferences>Preference 85</ns3:preferences>
+        <ns3:preferences>Preference 2</ns3:preferences>
+        <ns3:preferences>Preference 3</ns3:preferences>
+    </participant>
+</participants>

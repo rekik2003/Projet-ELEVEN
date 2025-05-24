@@ -1,0 +1,45 @@
+
+
+/* Ensure header and other content flow correctly */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: Set a global font */
+  display: flex;
+  flex-direction: column; /* Align children (Header, main content, Footer) vertically */
+}
+
+/* Hero section for the full-screen background image */
+.hero-section {
+  background-image: url('../assets/backgroundimage.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Optional: Style for content inside the hero section */
+.hero-section h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content should take up available space, pushing the footer down */
+.main-content {
+  flex-grow: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Ensures footer stays in place */
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Personnels xmlns:ns2="http://example.com/reservation" xmlns:ns3="http://example.com/personnel" xmlns:ns4="http://example.com/user" xmlns:ns5="http://example.com/participant" xmlns:ns6="http://example.com/match">
+    <Personnel>
+        <ns4:id>1</ns4:id>
+        <ns4:prenom>zoua</ns4:prenom>
+        <ns4:nom>mon3em</ns4:nom>
+        <ns4:email>moumen@example.com</ns4:email>
+        <ns4:login>moumen</ns4:login>
+        <ns4:motDePasse>1234</ns4:motDePasse>
+        <ns4:role>personnel</ns4:role>
+        <ns3:position>ramasseur</ns3:position>
+        <ns3:affectations>2024-12-12+01:00</ns3:affectations>
+    </Personnel>
+    <Personnel>
+        <ns4:id>2</ns4:id>
+        <ns4:prenom>zouari</ns4:prenom>
+        <ns4:nom>mon3em</ns4:nom>
+        <ns4:email>moumen@kjf.com</ns4:email>
+        <ns4:login>moumen135</ns4:login>
+        <ns4:motDePasse>1234</ns4:motDePasse>
+        <ns4:role>personnel</ns4:role>
+        <ns3:position>ramasseur</ns3:position>
+    </Personnel>
+    <Personnel>
+        <ns4:id>3</ns4:id>
+        <ns4:prenom>fafa</ns4:prenom>
+        <ns4:nom>mon3em</ns4:nom>
+        <ns4:email>moumen1223@kjf.com</ns4:email>
+        <ns4:login>moumen13568546</ns4:login>
+        <ns4:motDePasse>123452</ns4:motDePasse>
+        <ns4:role>personnel</ns4:role>
+        <ns3:position>arbitre</ns3:position>
+    </Personnel>
+</Personnels>

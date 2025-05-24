@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:match="http://example.com/match"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/match">
+    
+   <xs:complexType name="Match">
+        <xs:sequence>
+            <xs:element name="idMatch" type="xs:int"/>
+            <xs:element name="competition" type="xs:string"/>
+            <xs:element name="dateMatch" type="xs:date"/> 
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="lieu" type="xs:string"/>
+            <xs:element name="nbMaxParticipants" type="xs:int"/>
+            <xs:element name="titre" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="match" type="match:Match"/>
+</xs:schema>

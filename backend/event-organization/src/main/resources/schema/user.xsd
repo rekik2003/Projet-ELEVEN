@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://example.com/user"
+    xmlns:user="http://example.com/user">
+
+    <xs:complexType name="Utilisateur">
+        <xs:sequence>
+            <!-- User ID -->
+            <xs:element name="id" type="xs:int" minOccurs="1" maxOccurs="1">
+                <xs:unique name="uniqueId">
+                    <xs:selector xpath="id"/>
+                    <xs:field xpath="."/>
+                </xs:unique>
+            </xs:element>
+
+            <!-- First Name -->
+            <xs:element name="prenom" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+            <!-- Last Name -->
+            <xs:element name="nom" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+            <!-- Email with Validation -->
+            <xs:element name="email" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            <!-- Login -->
+            <xs:element name="login" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+            <!-- Password -->
+            <xs:element name="motDePasse" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+            <!-- Role as Enumeration -->
+            <xs:element name="role" minOccurs="1" maxOccurs="1">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Admin"/>
+                    <xs:enumeration value="Participant"/>
+                    <xs:enumeration value="Personnel"/>
+                    <xs:enumeration value="Organizer"/>
+                </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Utilisateur" type="user:Utilisateur"></xs:element>
+</xs:schema>

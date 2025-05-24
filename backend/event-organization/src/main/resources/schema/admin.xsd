@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:admin="http://example.com/admin"
+           xmlns:user="http://example.com/user"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/admin">
+    
+    <xs:import namespace="http://example.com/user" schemaLocation="user.xsd"/>
+    
+        <!-- Admin Entity -->
+    <xs:complexType name="Admin">
+        <xs:complexContent>
+            <xs:extension base="user:Utilisateur"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- Root Element for Admin -->
+    <xs:element name="admin" type="admin:Admin"/>
+</xs:schema>

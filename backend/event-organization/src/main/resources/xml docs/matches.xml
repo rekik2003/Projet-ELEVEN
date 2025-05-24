@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Matches xmlns:ns2="http://example.com/reservation" xmlns:ns3="http://example.com/match">
+    <Match>
+        <ns3:idMatch>3</ns3:idMatch>
+        <ns3:competition>competitive</ns3:competition>
+        <ns3:dateMatch>2024-12-12+01:00</ns3:dateMatch>
+        <ns3:description>PSG vs Barca</ns3:description>
+        <ns3:lieu>Stadium 1</ns3:lieu>
+        <ns3:nbMaxParticipants>1000</ns3:nbMaxParticipants>
+        <ns3:titre>messiiii</ns3:titre>
+    </Match>
+    <Match>
+        <ns3:idMatch>4</ns3:idMatch>
+        <ns3:competition>competitive</ns3:competition>
+        <ns3:dateMatch>2024-12-10+01:00</ns3:dateMatch>
+        <ns3:description>PSG vs BvB</ns3:description>
+        <ns3:lieu>Stadium 1</ns3:lieu>
+        <ns3:nbMaxParticipants>1000</ns3:nbMaxParticipants>
+        <ns3:titre>tata</ns3:titre>
+    </Match>
+    <Match>
+        <ns3:idMatch>5</ns3:idMatch>
+        <ns3:competition>competitive</ns3:competition>
+        <ns3:dateMatch>2024-12-11+01:00</ns3:dateMatch>
+        <ns3:description>PSG vs BvB</ns3:description>
+        <ns3:lieu>Stadium 1</ns3:lieu>
+        <ns3:nbMaxParticipants>1000</ns3:nbMaxParticipants>
+        <ns3:titre>tata</ns3:titre>
+    </Match>
+</Matches>

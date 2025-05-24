@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:affectation="http://example.com/affectation"
+           xmlns:personnel="http://example.com/personnel"
+           xmlns:match="http://example.com/match"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/affectation">
+
+    <xs:import namespace="http://example.com/personnel" schemaLocation="personnel.xsd"/>
+    <xs:import namespace="http://example.com/match" schemaLocation="match.xsd"/>
+    
+    <xs:complexType name="Affectation">
+        <xs:sequence>
+            <xs:element name="dateAffectation" type="xs:date"/>
+            <xs:element name="match" type="match:Match"/>
+            <xs:element name="personnel" type="personnel:Personnel"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="affectation" type="affectation:Affectation"/>
+</xs:schema>

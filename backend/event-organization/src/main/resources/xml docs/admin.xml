@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Admin xmlns="http://example.com/user" xmlns:ns6="http://example.com/match" xmlns:ns2="http://example.com/reservation" xmlns:ns4="http://example.com/personnel" xmlns:ns3="http://example.com/participant">
+    <id>1</id>
+    <prenom>ret3i</prenom>
+    <nom>amine</nom>
+    <email>ret3i@example.com</email>
+    <login>ret3i123</login>
+    <motDePasse>abcdefg</motDePasse>
+    <role>Admin</role>
+</ns2:Admin>

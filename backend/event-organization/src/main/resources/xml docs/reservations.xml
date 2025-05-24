@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Reservations xmlns:ns2="http://example.com/match" xmlns:ns3="http://example.com/user" xmlns:ns4="http://example.com/participant" xmlns:ns5="http://example.com/reservation" xmlns:ns6="http://example.com/personnel">
+    <reservation>
+        <ns5:block>C3</ns5:block>
+        <ns5:dateReservation>2024-12-12+01:00</ns5:dateReservation>
+        <ns5:numPlace>759</ns5:numPlace>
+        <ns5:match>
+            <ns2:idMatch>3</ns2:idMatch>
+            <ns2:competition>competitive</ns2:competition>
+            <ns2:dateMatch>2024-12-12+01:00</ns2:dateMatch>
+            <ns2:description>PSG vs Barca</ns2:description>
+            <ns2:nbMaxParticipants>1000</ns2:nbMaxParticipants>
+            <ns2:titre>messiiii</ns2:titre>
+        </ns5:match>
+        <ns5:participant>
+            <ns3:id>10000</ns3:id>
+            <ns3:prenom>tchedo to7sel</ns3:prenom>
+            <ns3:nom>mo7sen</ns3:nom>
+            <ns3:email>suiiiiii@gmds.com</ns3:email>
+            <ns3:login>lksdjfls</ns3:login>
+            <ns3:motDePasse>lskdjfl</ns3:motDePasse>
+            <ns3:role>participant</ns3:role>
+            <ns4:adresse>sdjfnslk</ns4:adresse>
+            <ns4:numTel>45545</ns4:numTel>
+            <ns4:preferences>Preference 1</ns4:preferences>
+            <ns4:preferences>Preference 85</ns4:preferences>
+            <ns4:preferences>Preference 2</ns4:preferences>
+            <ns4:preferences>Preference 3</ns4:preferences>
+        </ns5:participant>
+    </reservation>
+</Reservations>

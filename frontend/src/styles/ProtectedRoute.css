@@ -1,0 +1,14 @@
+.protected-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #f0f0f0;
+  }
+  
+  .loading-message {
+    font-size: 20px;
+    color: #00bcd4;
+  }
+  

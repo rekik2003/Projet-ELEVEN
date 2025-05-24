@@ -1,0 +1,65 @@
+/* Flex layout for the signup page */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;
+  min-height: 79vh; /* Ensures the page takes up at least the full viewport height */
+}
+
+/* Signup form container */
+.signup-container {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.signup-container h1 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008c99;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  text-align: center;
+}

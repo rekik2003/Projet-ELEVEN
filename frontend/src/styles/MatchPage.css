@@ -1,0 +1,104 @@
+/* General container styles */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading for the match list */
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+/* Match list container */
+ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  justify-content: space-between; /* Ensures proper spacing between items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px; /* Optional: Set max width for the list */
+}
+
+/* Individual match item */
+li {
+  background-color: #333;
+  flex: 0 1 calc(50% - 10px); /* Take 50% width minus spacing */
+  margin: 10px 5px; /* Adds spacing between items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Ensure content fills the card */
+}
+
+/* Match title centered */
+li h3 {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/* Match properties */
+li p {
+  color: #f0f0f0;
+  margin: 2px 0;
+  font-size: 1.1rem;
+}
+
+li p span {
+  color: #b2b2b2;
+}
+
+/* Button container to align buttons properly */
+li .button-container {
+  margin-top: auto; /* Push the button to the bottom of the card */
+  text-align: center; /* Optional: Center-align button if needed */
+}
+
+/* Button styles */
+button.button-ticket {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.button-ticket:hover {
+  background-color: #008c99;
+}
+
+/* Error message styles */
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* No matches available message */
+.container p {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+  li {
+    flex: 0 1 100%; /* Full width for smaller screens */
+  }
+}

@@ -1,0 +1,53 @@
+.reservation-management-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .reservation-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reservation-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .reservation-item p {
+    margin: 5px 0;
+  }
+  
+  .button-delete {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .button-back {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-back:hover {
+    background-color: #2980b9;
+  }
+  

@@ -1,0 +1,62 @@
+.footer {
+  background-color: #121212;
+  color: #b0bec5;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Aligns links to the left and year to the right */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 20px; /* Adds some padding to the sides */
+}
+
+/* Social Media Links Styling */
+.footer-social-media {
+  padding-left: 10px;
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social-media a {
+  display: inline-block;
+}
+
+.footer-social-media img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.footer-social-media img:hover {
+  transform: scale(1.1);
+}
+
+/* Year Styling */
+.footer-year {
+  font-size: 12px;
+  color: #b0bec5;
+  text-align: right; /* Ensures year text stays aligned to the right */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center;
+  }
+
+  .footer-social-media {
+      margin-bottom: 15px; /* Adds spacing between links and year */
+      justify-content: center; /* Centers the links */
+  }
+
+  .footer-year {
+      text-align: center; /* Centers the year text for smaller screens */
+  }
+}

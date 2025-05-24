@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:organizer="http://example.com/organizer"
+           xmlns:match="http://example.com/match"
+           xmlns:user="http://example.com/user"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/organizer">
+
+    <xs:import namespace="http://example.com/user" schemaLocation="user.xsd"/>
+    <xs:import namespace="http://example.com/match" schemaLocation="match.xsd"/>
+
+    <xs:complexType name="Organisateur">
+        <xs:complexContent>
+            <xs:extension base="user:Utilisateur">
+                <xs:sequence>
+                    <xs:element name="numTel" type="xs:int"/>
+                    <xs:element name="match" type="match:Match" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+        
+    </xs:complexType>
+    <xs:element name="organisateur" type="organizer:Organisateur"/>
+</xs:schema>

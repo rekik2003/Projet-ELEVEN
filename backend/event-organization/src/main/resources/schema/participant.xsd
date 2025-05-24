@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:participant="http://example.com/participant"
+           xmlns:user="http://example.com/user"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/participant">
+
+    <xs:import namespace="http://example.com/user" schemaLocation="user.xsd"/>  
+
+    <xs:complexType name="Participant">    
+            <xs:complexContent>
+                <xs:extension base="user:Utilisateur">
+                    <xs:sequence>
+                        <xs:element name="adresse" type="xs:string"/>
+                        <xs:element name="numTel" type="xs:int"/>
+                        <xs:element name="preferences" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+            
+    </xs:complexType>
+    <xs:element name="participant" type="participant:Participant"/>
+</xs:schema>

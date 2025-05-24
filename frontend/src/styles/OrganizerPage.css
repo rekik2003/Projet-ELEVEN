@@ -1,0 +1,13 @@
+.container-create-match {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.creer {
+    width: 60%;
+    margin: 0 auto
+}

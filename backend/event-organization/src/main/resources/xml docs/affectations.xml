@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Affectations xmlns:ns2="http://example.com/match" xmlns:ns3="http://example.com/user" xmlns:ns4="http://example.com/personnel" xmlns:ns5="http://example.com/reservation" xmlns:ns6="http://example.com/participant">
+    <Affectation>
+        <ns5:dateAffectation>2024-12-15+01:00</ns5:dateAffectation>
+        <ns5:match>
+            <ns2:idMatch>3</ns2:idMatch>
+            <ns2:competition>competitive</ns2:competition>
+            <ns2:dateMatch>2024-12-12+01:00</ns2:dateMatch>
+            <ns2:description>PSG vs Barca</ns2:description>
+            <ns2:lieu>Stadium 1</ns2:lieu>
+            <ns2:nbMaxParticipants>1000</ns2:nbMaxParticipants>
+            <ns2:titre>messiiii</ns2:titre>
+        </ns5:match>
+        <ns5:personnel>
+            <ns3:id>1</ns3:id>
+            <ns3:prenom>zoua</ns3:prenom>
+            <ns3:nom>mon3em</ns3:nom>
+            <ns3:email>moumen@example.com</ns3:email>
+            <ns3:login>moumen</ns3:login>
+            <ns3:motDePasse>1234</ns3:motDePasse>
+            <ns3:role>personnel</ns3:role>
+            <ns4:position>ramasseur</ns4:position>
+            <ns4:affectations>2024-12-12+01:00</ns4:affectations>
+        </ns5:personnel>
+    </Affectation>
+</Affectations>

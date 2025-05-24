@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:personnel="http://example.com/personnel"
+           xmlns:user="http://example.com/user"
+           elementFormDefault="qualified"
+           targetNamespace="http://example.com/personnel">
+
+    <xs:import namespace="http://example.com/user" schemaLocation="user.xsd"/>
+    
+    <xs:complexType name="Personnel">
+        <xs:complexContent>
+            <xs:extension base="user:Utilisateur">
+                <xs:sequence>
+                    <xs:element name="competences" type="xs:string" maxOccurs="unbounded"/>
+                    <xs:element name="position" type="xs:string"/>
+                    <xs:element name="affectations" type="xs:date" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="personnelEvenementiel" type="personnel:Personnel"/>
+</xs:schema>

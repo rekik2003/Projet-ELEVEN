@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Organisateurs xmlns:ns2="http://example.com/reservation" xmlns:ns3="http://example.com/match" xmlns:ns4="http://example.com/user" xmlns:ns5="http://example.com/participant" xmlns:ns6="http://example.com/personnel">
+    <Organisateur>
+        <ns4:id>100</ns4:id>
+        <ns4:prenom>faaafa</ns4:prenom>
+        <ns4:nom>reb3i</ns4:nom>
+        <ns4:email>rebaii1@kjf.com</ns4:email>
+        <ns4:login>rebaii1356</ns4:login>
+        <ns4:motDePasse>12534</ns4:motDePasse>
+        <ns4:role>organisateur</ns4:role>
+        <ns2:numTel>65465856</ns2:numTel>
+    </Organisateur>
+    <Organisateur>
+        <ns4:id>101</ns4:id>
+        <ns4:prenom>trah</ns4:prenom>
+        <ns4:nom>tbadalchi</ns4:nom>
+        <ns4:email>rebaiids1@kjf.com</ns4:email>
+        <ns4:login>rebasdii1356</ns4:login>
+        <ns4:motDePasse>145234</ns4:motDePasse>
+        <ns4:role>organisateur</ns4:role>
+        <ns2:numTel>654656</ns2:numTel>
+        <ns2:match>
+            <ns3:idMatch>3</ns3:idMatch>
+            <ns3:competition>competitive</ns3:competition>
+            <ns3:dateMatch>2024-12-12+01:00</ns3:dateMatch>
+            <ns3:description>PSG vs Barca</ns3:description>
+            <ns3:nbMaxParticipants>1000</ns3:nbMaxParticipants>
+            <ns3:titre>messiiii</ns3:titre>
+        </ns2:match>
+    </Organisateur>
+</Organisateurs>
